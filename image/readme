@@ -1,0 +1,27 @@
+# ascii
+
+Turns images into ascii art
+From: https://github.com/mkaminsky11/ascii
+
+## Installation
+sudo python setup.py install
+
+## Basic Usage
+import toascii # import the package
+
+
+output = toascii.loadFromUrl("http://i.imgur.com/ITx3Jcd.jpg") # load a funny picture from the web :)
+print(output)
+
+output = toascii.loadFromFile("C:/Users/AwesomeUser/Desktop/example.jpg") # load a picture from a directory
+print(output)
+
+## Advanced Usage
+### Convert one pixel
+output = toascii.onePixel(13,13,13) # some arbitrary rgb values
+
+### Create image with fixed width
+output = toascii.loadFromUrl("http://i.imgur.com/ITx3Jcd.jpg", columns=100)
+
+### Don't color image
+output = toascii.loadFromUrl("http://i.imgur.com/ITx3Jcd.jpg", color=False)

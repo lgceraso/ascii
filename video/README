@@ -1,0 +1,6 @@
+Dependencies: opencv-python, ffmpeg e mpv
+
+In order to change the video remove imgs/
+
+In order to change delay, edit the line:
+os.system("sleep 0.5 && mpv aud.mp3 & st -f Hermit:pixelsize=5 -e python {}/play.py -play".format(path))
